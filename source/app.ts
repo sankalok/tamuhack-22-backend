@@ -1,13 +1,14 @@
 import express from 'express';
 import { createServer } from 'http';
 import './config';
-
+import cors from 'cors';
 import router from './api/router';
 
 const app = express();
 
 app.disable('x-powered-by');
 app.disable('etag');
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use('/', router);
 
