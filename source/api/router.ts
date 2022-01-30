@@ -23,6 +23,6 @@ router.get('/getService', getService)
 
 router.post('/createUser', createUser)
 router.get('/getUser', getUser)
-router.get('/getUserData', getUserData)
+router.post('/getUserData', getUserData)
 
 export default router;
