@@ -13,7 +13,7 @@ app.use(express.json());
 app.use('/', router);
 
 const IP = process.env.IP || '127.0.0.1';
-const PORT = parseInt(process.env.PORT || '6969');
+const PORT = parseInt(process.env.PORT || '3000');
 
 const httpServer = createServer(app).listen(PORT, IP, () => {
     console.log(`Started server at ${IP}:${PORT}`);
