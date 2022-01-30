@@ -4,7 +4,6 @@ import './config';
 
 import router from './api/router';
 
-
 const app = express();
 
 app.disable('x-powered-by');
@@ -12,7 +11,7 @@ app.disable('etag');
 app.use(express.json());
 app.use('/', router);
 
-const IP = process.env.IP || '127.0.0.1';
+const IP = process.env.IP || '0.0.0.0';
 const PORT = parseInt(process.env.PORT || '3000');
 
 const httpServer = createServer(app).listen(PORT, IP, () => {
