@@ -25,4 +25,5 @@ router.post('/createUser', createUser)
 router.get('/getUser', getUser)
 router.post('/getUserData', getUserData)
 
+
 export default router;
