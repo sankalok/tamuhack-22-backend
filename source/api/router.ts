@@ -7,6 +7,7 @@ import createService from './controllers/createService';
 import getService from './controllers/getService';
 
 import createUser from './controllers/createUser';
+import getUser from './controllers/getUser';
 
 const router = Router();
 
@@ -17,5 +18,6 @@ router.post('/createService', createService)
 router.get('/getService', getService)
 
 router.post('/createUser', createUser)
+router.get('/getUser', getUser)
 
 export default router;
