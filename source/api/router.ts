@@ -9,8 +9,11 @@ import getService from './controllers/getService';
 import createUser from './controllers/createUser';
 import getUser from './controllers/getUser';
 
+import getDefault from './controllers/getDefault';
+
 const router = Router();
 
+router.get('/', getDefault)
 router.get('/posts', getPosts);
 router.post('/post', createPost);
 
